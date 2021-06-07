@@ -54,6 +54,14 @@ main {
   background-color: rgba(255, 0, 21, 0.349);
 }
 
+main #faqs .faq {
+  margin-bottom: 40px;
+}
+
+main #faqs .faq h2{
+  margin-bottom: 20px;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
