@@ -93,7 +93,7 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
           <a href="#">Introduzione</a>
         </li>
         <li>
-          <a href="#">Nome sulla privacy</a>
+          <a href="#">Norme sulla privacy</a>
         </li>
         <li>
           <a href="#">Termini di servizio</a>
@@ -145,10 +145,10 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
       <i class="fas fa-globe-europe"></i>
       <label for="language"></label>
       <select name="language" id="language">
-        <option value="volvo">Italiano</option>
-        <option value="saab">English</option>
-        <option value="mercedes">Fran&#231;ais</option>
-        <option value="audi">Українська</option>
+        <option value="italiano">Italiano</option>
+        <option value="english">English</option>
+        <option value="français">Fran&#231;ais</option>
+        <option value="yкраїнська">Українська</option>
       </select>
     </div>
   </footer>
