@@ -110,13 +110,17 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
   <main>
     <div id="faqs">
       <?php
+      // con ciclo foreach su $faqs leggo le informazioni di tutti gli array $faq
       foreach ($faqs as $faq) { ?>
         <div class="faq">
+          <!-- stampo le 'question' di $faq -->
           <h2>
             <?php echo $faq['question'] ?>
           </h2>
+          <!-- stampo le 'answer' di $faq -->
+          <!-- La funzione nl2br di PHP restituisce la stringa passata in oggetto inserendo automaticamente il tag HTML <br> per ogni ritorno a capo (newline) presente nella stringa stessa.-->
           <p>
-            <?php echo nl2br($faq['answer']) ?>
+            <?php echo nl2br($faq['answer']) ?> 
           </p>
         </div>
       <?php } ?>
