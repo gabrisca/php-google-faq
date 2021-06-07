@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -55,11 +56,18 @@ main {
 }
 
 main #faqs .faq {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 main #faqs .faq h2{
   margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+main #faqs .faq p{
+  font-size: 14px;
+  font-weight: 400; 
 }
 
 footer {
