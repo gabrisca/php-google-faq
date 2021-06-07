@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   overflow-y: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
   width: 100%;
   height: 100px;
   border-bottom: 1px solid grey;
-  background-color: lightgray;
+  background-color: white;
   padding: 0 30px;
   position: fixed;
 }
@@ -28,7 +28,47 @@ header #top {
   align-items: center;
   width: 100%;
   height: 50%;
-  background-color: rgba(255, 0, 0, 0.397);
+}
+
+header #top .logo {
+  display: flex;
+  align-items: center;
+}
+
+header #top .logo img {
+  margin-right: 5px;
+}
+
+header #top .logo span {
+  color: #5f6368;
+  opacity: 1;
+  font-size: 20px;
+}
+
+header #top .account i {
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header #top .account i:first-child {
+  color: #5f6368;
+  opacity: 1;
+  background-color: rgba(231, 229, 229, 0.39);
+}
+
+header #top .account i:first-child:hover {
+  background-color: rgb(231, 229, 229);
+}
+
+header #top .account i:last-child {
+  background-color: #33691f;
+  color: white;
+}
+
+header #top .account i:last-child:hover {
+  background-color: #33691fe8;
 }
 
 header #bottom {
@@ -37,15 +77,29 @@ header #bottom {
   align-items: center;
   width: 100%;
   height: 50%;
-  background-color: rgba(4, 0, 255, 0.397);
 }
 
-header #bottom ul{
+header #bottom ul {
   list-style: none;
+  height: 100%;
 }
 
-header #bottom ul li{
+header #bottom ul li {
   display: inline-block;
+  margin-right: 20px;
+  height: 100%;
+  line-height: 50px;
+}
+
+header #bottom ul li a {
+  color: #5f6368;
+  text-decoration: none;
+}
+
+header #bottom ul li a.active {
+  color: #3367d6;
+  border-bottom: 3px solid #3367d6;
+  padding-bottom: 9%;
 }
 
 main {
@@ -58,22 +112,22 @@ main {
 
 main #faqs {
   padding: 0px 65px;
-  color: rgba(0,0,0,0.87);
+  color: rgba(0, 0, 0, 0.87);
 }
 
 main #faqs .faq {
   margin-bottom: 60px;
 }
 
-main #faqs .faq h2{
+main #faqs .faq h2 {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 24px;
 }
 
-main #faqs .faq p{
+main #faqs .faq p {
   font-size: 14px;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 footer {
@@ -82,14 +136,29 @@ footer {
   align-items: center;
   width: 100%;
   height: 50px;
-  background-color: lightgray;
-  padding: 0px 150px;
+  background-color: #f5f5f5;
+  padding: 0px 215px;
+  border-top: 1px solid #eee;
 }
 
 footer ul {
   list-style: none;
 }
 
-footer ul li{
+footer ul li {
   display: inline-block;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: rgba(61, 61, 61, 0.8);
+  font-size: 11px;
+}
+
+footer i {
+  color: #57c4fc;
+}
+
+footer select {
+  width: 140px;
 }

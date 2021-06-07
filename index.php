@@ -64,20 +64,28 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- f-awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
   <!-- style.css -->
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Google FAQ</title>
 </head>
 <!-- Esercizio di oggi: cartella/repo php-google-faq Riscrivere questa pagina del sito google https://policies.google.com/faq. Ci sono diverse domande con relative risposte. Gestire il “Database” e la visualizzazione di queste domande e risposte con PHP. -->
 
 <body>
   <header>
     <section id="top">
-      <div class="logo">google</div>
-      <div class="account">account</div>
+      <div class="logo">
+        <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="logo google">
+        <span>Privacy e Termini</span>
+      </div>
+      <div class="account">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-user"></i>
+      </div>
     </section>
     <section id="bottom">
       <ul>
@@ -94,7 +102,7 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
           <a href="#">Tecnologie</a>
         </li>
         <li>
-          <a href="#">Domande frequenti</a>
+          <a class="active" href="#">Domande frequenti</a>
         </li>
       </ul>
     </section>
@@ -103,34 +111,41 @@ Se il paese associato al tuo account non corrisponde al tuo paese di residenza, 
     <div id="faqs">
       <?php
       foreach ($faqs as $faq) { ?>
-      <div class="faq">
-        <h2>
-          <?php echo $faq['question'] ?>
-        </h2>
-        <p>
-          <?php echo nl2br($faq['answer']) ?>
-        </p>
-      </div>
+        <div class="faq">
+          <h2>
+            <?php echo $faq['question'] ?>
+          </h2>
+          <p>
+            <?php echo nl2br($faq['answer']) ?>
+          </p>
+        </div>
       <?php } ?>
     </div>
   </main>
   <footer>
     <ul>
       <li>
-        <a href="#">Google</a>
+        <a href="#">Google &middot;</a>
       </li>
       <li>
-        <a href="#">Tutto su Google</a>
+        <a href="#">Tutto su Google &middot;</a>
       </li>
       <li>
-        <a href="#">Privacy</a>
+        <a href="#">Privacy &middot;</a>
       </li>
       <li>
         <a href="#">Termini</a>
       </li>
     </ul>
     <div>
-      Italiano
+      <i class="fas fa-globe-europe"></i>
+      <label for="language"></label>
+      <select name="language" id="language">
+        <option value="volvo">Italiano</option>
+        <option value="saab">English</option>
+        <option value="mercedes">Fran&#231;ais</option>
+        <option value="audi">Українська</option>
+      </select>
     </div>
   </footer>
 </body>
