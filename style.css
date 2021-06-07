@@ -51,8 +51,14 @@ header #bottom ul li{
 main {
   width: 100%;
   min-height: calc(100vh - 50px);
-  padding: 200px 150px 100px 150px;
-  background-color: rgba(255, 0, 21, 0.349);
+  padding: 200px 150px 0px 150px;
+  background-color: white;
+  line-height: 24px;
+}
+
+main #faqs {
+  padding: 0px 65px;
+  color: rgba(0,0,0,0.87);
 }
 
 main #faqs .faq {
