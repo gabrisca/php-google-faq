@@ -18,7 +18,7 @@ header {
   height: 100px;
   border-bottom: 1px solid grey;
   background-color: white;
-  padding: 0 30px;
+  padding: 10px 20px;
   position: fixed;
 }
 
@@ -46,7 +46,7 @@ header #top .logo span {
 }
 
 header #top .account i {
-  margin-right: 10px;
+  margin-left: 10px;
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
@@ -107,7 +107,6 @@ main {
   min-height: calc(100vh - 50px);
   padding: 200px 150px 0px 150px;
   background-color: white;
-  line-height: 24px;
 }
 
 main #faqs {
@@ -123,11 +122,13 @@ main #faqs .faq h2 {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 24px;
+  line-height: 32px;
 }
 
 main #faqs .faq p {
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 footer {
